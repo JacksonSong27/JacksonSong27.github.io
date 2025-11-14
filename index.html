@@ -20,7 +20,7 @@ Color Choices: I use one color. The plot only tracks totals. Extra color does no
 </p>
 
 <p>
-Transformations: I convert LastModifiedDate to a date. I extract the year. I drop missing rows. I keep a smaller sample to avoid large data issues.
+Transformations: I convert LastModifiedDate to a date. I extract the year and drop missing rows. I keep a smaller sample to avoid large data issues.
 </p>
 
 <div id="plot1"></div>
@@ -34,7 +34,7 @@ Description: Plot 2 shows license counts per year grouped by license type. This 
 </p>
 
 <p>
-Design Choices: I use a bar chart. Year is on the x axis. Count is on the y axis. License Type controls color so each group stands out.
+Design Choices: I use a bar chart. Year is on the x axis. Count is on the y axis. Each license type has its own color so the groups stand out clearly.
 </p>
 
 <p>
@@ -42,7 +42,7 @@ Color Choices: I map each license type to a color. This helps to compare groups.
 </p>
 
 <p>
-Transformations: I use the same cleaned data as Plot 1. Year is already extracted, so no extra steps are needed.
+Transformations: This plot uses the same cleaned dataset from Plot 1. The year is already extracted, so no further steps are needed.
 </p>
 
 <div id="plot2"></div> 
@@ -52,7 +52,7 @@ vegaEmbed('#plot2', 'plot2.json');
 
 <h2>Interactivity</h2>
 <p>
-The second plot uses tooltips. You can see the year, license type, and count when you hover on a bar. This makes the plot easier to read.
+The second plot uses tooltips. You can see the year, license type, and count when you hover on the bar. This makes the plot easier to read.
 </p>
 
 <h2>Data Link</h2>
